@@ -16,7 +16,7 @@ def get_website_status(url):
     pass
     return None
 
-url = ["127.0.0.1"]   
+url = ["http://127.0.0.1"]   
  
 for i in url :
     status_code = get_website_status(i)
