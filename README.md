@@ -41,4 +41,6 @@ This is a script designed to automate the task of checking server availability, 
             else:
                print("server is down:",i)
 
-       
+in some cases you can face problems when the ssl certificate is self signed ,in this case python fails to retreive the status code of the web pages so you can add this two follwing lines of code
+                        from requests.packages.urllib3.exceptions import InsecureRequestWarning
+                        requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
