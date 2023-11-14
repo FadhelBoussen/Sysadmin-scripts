@@ -13,4 +13,4 @@ $allInstalledPrograms = $installed1 + $installed2
 $allInstalledPrograms | Format-Table -AutoSize
 
 
-$allInstalledPrograms | Export-Csv -Path "C:\users\fadhel.boussen\documents\AllInstalledPrograms.csv" -NoTypeInformation
+$allInstalledPrograms | Export-Csv -Path "C:\users\*\documents\AllInstalledPrograms.csv" -NoTypeInformation
